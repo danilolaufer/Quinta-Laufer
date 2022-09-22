@@ -13,6 +13,7 @@ h1{
 }
 #herencia {
     background-color: #bded7e;
+    width: 100%;
 }
 .lista {
     list-style-type:none;
@@ -44,6 +45,7 @@ ul li a:hover{
 }
 .fondopag1{
     background-color: #fe495f;
+    width: 100%;
 }
 .fondopag2{
     background-color: #fe9d97 ;
@@ -301,45 +303,4 @@ footer nav{
     margin: 49px;
     width: 45em;
     box-shadow: 0px 0px 20px 5px;
-}
-@media screen and (min-width:320px)and(max-width:767px) {
-    .grid-layout{
-        display: grid;
-        grid-template-areas:"txt1" 
-                            "img1"
-                            "txt2" 
-                            "img2";
-        grid-template-columns: 100% ;
-        grid-template-rows: 50% auto;
-        margin: 0px auto;
-        background-color: #fe9d97;
-        padding: 20px;
-        border: 1px solid black;
-        width: 50%;
-    }
-}
-@media screen and (min-width:768px) and (max-width: 1023px) {
-    .grid-layout{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:"txt1" 
-                            "img1"
-                            "txt2" 
-                            "img2";
-    }
-}
-@media screen and (min-width:1024px) {
-    .grid-layout{
-        display: grid;
-        justify-content:stretch;
-        grid-template-areas:"txt1 img1"
-                            "txt2 img2";
-        grid-template-columns: 35% auto ;
-        grid-template-rows: 50% auto;
-        margin: 0px auto;
-        background-color: #fe9d97;
-        padding: 20px;
-        border: 1px solid black;
-}
 }
