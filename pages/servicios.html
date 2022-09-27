@@ -17,22 +17,37 @@
 </head>
 <body class="fondopag">
     <header id="herencia">
-        <nav>
-            <a href="../index.html">
-                <img class="logo" src="../assets/img/favicon_io (1)/loogolaufer corTADA.png" alt="">
-                <h1 class="nombre">Quinta Laufer</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand logo" href="../index.html">
+                <img  src="/assets/img/favicon_io (1)/loogolaufer corTADA.png" alt="logolaufer" width="140" height="140">
             </a>
-            <ul class="lista">
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            </nav>
+            <a class="navbar-brand nombre" href="../index.html">Quinta Laufer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse-horizontal lista" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"href="./sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <main>
         <h1 class="texto fondopag1">Nuestros Servicios</h1>
-        <article class="grid-layout">
+        <article class="grid-layout container">
             <div class="caja c1">
                 <img class="icon" src="../assets/img/verduras.png" alt="verduras">
                 <p class="texto ordentexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
