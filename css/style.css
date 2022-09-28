@@ -76,7 +76,10 @@ header nav a{
     justify-content: space-between;
     width: 100%;
 }
-
+.alinear{
+    display: flex;
+    justify-content: center;   
+}
 
 .logo{
     width:9em;
