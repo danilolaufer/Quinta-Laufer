@@ -20,7 +20,7 @@ h1{
     list-style-type:none;
     font-size: 20px;
     padding: 10px 20px;
-    line-height: 20px;
+    line-height: 15px;
     background-color:rgb(213, 243, 222);
 }
 ul li a:hover{
@@ -73,15 +73,10 @@ a{
 header nav a{
     display: flex   ;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-header nav ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items:center;
-}
+
 
 .logo{
     width:9em;
@@ -95,7 +90,7 @@ main img{
 header nav{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:flex-end;
     align-items: center;
 }
 .imagen{
@@ -143,12 +138,6 @@ footer nav{
 .videonosotros{
     background-color:#8ebf3f;
     padding: 10px;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    width: 70em;
-    height: 40em;
 }
 .nosotros{
     width: 40%;
@@ -156,16 +145,6 @@ footer nav{
     padding: 10px;
 }
 
-.alinear{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.enfila{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
 .tamañoimagen{
     width: 75em;
     height: 45em;
@@ -325,14 +304,32 @@ footer nav{
     width: 45em;
     box-shadow: 0px 0px 20px 5px;
 }
-@media (max-width: 576px ){
+@media screen and (max-width: 576px ){
     .grid-layout{
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: auto;
         grid-template-areas:
         "txt1"
         "img1"
         "txt2"
         "img2";
-
+    
+    }
+}
+.grid-layout1{
+    display: grid;
+    justify-content:center;
+    grid-template-columns: auto;
+}
+@media screen and (max-width:576px){
+    .grid-layout1{
+        grid-template-columns: repeat(1, 1 fr);
+    
+    }
+    .tamañoimagen{
+        width: 100%;
+        height: auto;
+    }
+    .videonosotros{
+        width: 100%;
     }
 }
