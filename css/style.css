@@ -256,17 +256,15 @@ footer nav{
 }
 .moverimg{
     float: right;
-    width: 40m;
+    width: 40em;
     padding: 4em;
     margin: 4em;
 }
 .textofinal{
     padding: 10em;
     font-size: x-large;
-    text-align: center;
     background-color:#bded7e;       
     margin: 10px;
-    padding: 10px;
     text-align: center;
     box-shadow: 10px 10px #fe9d97;
 }
