@@ -71,9 +71,6 @@ a{
     display: inline;
 }
 header nav a{
-    display: flex   ;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
 }
 .alinear{
@@ -90,12 +87,7 @@ main img{
     width: 72em;
     margin: 1px;
 }
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-    align-items: center;
-}
+
 .imagen{
     display: flex;
     flex-direction: row;
@@ -117,12 +109,6 @@ section img{
     display: flex;
 
 }
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .videoyt{
     width: 50em;
     height: 30em;
@@ -130,13 +116,6 @@ section {
 }
 .mover{
     float: center;
-}
-footer nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-
 }
 .videonosotros{
     background-color:#8ebf3f;
@@ -261,7 +240,7 @@ footer nav{
     margin: 4em;
 }
 .textofinal{
-    padding: 10em;
+    padding: 1em;
     font-size: x-large;
     background-color:#bded7e;       
     margin: 10px;
@@ -305,6 +284,28 @@ footer nav{
     width: 45em;
     box-shadow: 0px 0px 20px 5px;
 }
+.grid-contacto{
+    display: grid;
+    grid-area: 
+    "header"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-fill, 1fr);
+}
+.grid-header{
+    grid-area: header;
+}
+.grid-main{
+    grid-area: main;
+
+}
+.grid-aside{
+    grid-area: aside;
+}
+.grid-footer{
+    grid-area: footer;
+}
 @media screen and (max-width: 576px ){
     .grid-layout{
         grid-template-columns: auto;
@@ -316,7 +317,7 @@ footer nav{
     
     }
 }
-.grid-layout1{
+    .grid-layout1{
     display: grid;
     justify-content:center;
     grid-template-columns: auto;
@@ -332,5 +333,11 @@ footer nav{
     }
     .videonosotros{
         width: 100%;
+    }
+    #herencia{
+        width: ato;
+    }
+    body{
+        width: 100vh;
     }
 }
