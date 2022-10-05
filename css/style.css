@@ -14,6 +14,7 @@ h1{
 #herencia {
     background-color: #bded7e;
     width: 100%;
+    flex-wrap: inherit;
 }
 
 .lista  {
@@ -45,7 +46,7 @@ ul li a:hover{
 }
 .ofertadescuento{
     text-align: center;
-    background-color: #8ebf3f;
+    background-color: #82ac40;
     padding: 10px;
     font-size: 150%;
 }
@@ -65,7 +66,7 @@ a{
 
 }
 .nombre{
-    font-size: 700%;
+    font-size: 6em;
     margin: 0cm;
     font-family: "tangerine";
     display: inline;
@@ -93,7 +94,7 @@ main img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 40em;
+    width: 50%;
     border-radius: #000000;
 }
 .fondooferta{
@@ -122,7 +123,6 @@ section img{
     padding: 10px;
 }
 .nosotros{
-    width: 40%;
     margin: 7em;
     padding: 10px;
 }
@@ -131,6 +131,7 @@ section img{
     width: 75em;
     height: 45em;
     margin: 5em;
+
 }
 .contenedor .form{
     background-color:rgba(0,0,0,.6);
@@ -251,34 +252,7 @@ section img{
     line-height: 100px;
     font-size: 20px;
 }
-.grid-layout{
-    display: grid;
-    justify-content:stretch;
-    grid-template-areas:"txt1 img1"
-                        "txt2 img2";
-    margin: 0px auto;
-    background-color: #fe9d97;
-    padding: 20px;
-    border: 1px solid black;
-}
-.caja{
-    height: 750px;
-    background-color: #fffec8;
-    text-align: center;
-    line-height: 150px;
-}
-.c1{
-    grid-area: txt1;
-}
-.c2{
-    grid-area: img1;
-}
-.c3{
-    grid-area: txt2;
-}
-.c4{
-    grid-area: img2;
-}
+
 .imgser{
     margin: 49px;
     width: 45em;
@@ -306,38 +280,29 @@ section img{
 .grid-footer{
     grid-area: footer;
 }
-@media screen and (max-width: 576px ){
-    .grid-layout{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "txt1"
-        "img1"
-        "txt2"
-        "img2";
-    
-    }
+.contenedor-sucursales{
+    width: 100%;
+    max-width: 1920px;
+
 }
-    .grid-layout1{
-    display: grid;
-    justify-content:center;
-    grid-template-columns: auto;
-}
-@media screen and (max-width:576px){
-    .grid-layout1{
-        grid-template-columns: repeat(1, 1 fr);
-    
-    }
-    .tamañoimagen{
-        width: 100%;
-        height: auto;
-    }
+@media  screen and (max-width: 480px) {
     .videonosotros{
         width: 100%;
+        height: 280px;
     }
-    #herencia{
-        width: ato;
+    .logo{
+        width: 70px ;
+        height: 70px;
     }
-    body{
-        width: 100vh;
+    .nombre{
+        font-size: 4em;
     }
+    .tamañoimagen{
+        width: 80%;
+        height: 280px;
+    }
+    .mobile{
+        width: 100%;
+    }
+
 }
