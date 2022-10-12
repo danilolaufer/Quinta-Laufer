@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+    .fondopag{
+        background-color: #fffec8;
+        width: 100%;
+    }
+    .fondopag1{
+        background-color: #fe495f;
+        width: 100%;
+    }
+    .fondopag2{
+        background-color: #fe9d97 ;
+    }
+    .fondooferta{
+        background-color:#fe495f;
+    }
+    .ofertatexto{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size:xx-large
+}

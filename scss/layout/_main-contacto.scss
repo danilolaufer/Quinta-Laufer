@@ -1,0 +1,60 @@
+.contenedor .form{
+    background-color:rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    .label{
+        display: block;
+        color:#f39d2d;
+        font-size: 16px;
+        position: relative;
+    }
+}
+.contenedor .form .input, .textarea{
+    background-color: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f39d2d;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+.contenedor .form .textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedor .form .submit {
+    width: 100%;
+    outline:none;
+    background-color: #bded7e;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all.5s ease;
+    .contenedor .form .submit:hover {
+        background-color:#fffec8;
+    }
+}
+
+.contenedor .form .borrar{
+    width: 100%;
+    outline:none;
+    background-color: #bded7e;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all.5s ease;
+    .contenedor .form .borrar:hover {
+        background-color: #f8f7d3;
+    }
+}

@@ -1,0 +1,36 @@
+#herencia {
+    background-color: #bded7e;
+    width: 100%;
+}
+.lista  {
+    list-style-type:none;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 15px;
+    background-color:rgb(213, 243, 222);
+}
+ul{
+    font-size: 20px;
+    li a:hover{
+        background-color: #fcffbd;
+        a{
+            text-decoration: none;
+            color: black;
+            width: 100%;
+        }
+    }
+}
+.nombre{
+    font-size: 6em;
+    margin: 0cm;
+    font-family: "tangerine";
+    display: inline;
+}
+.logo{
+    width:9em;
+    height: 9em;
+
+}
+header nav a{
+    width: 100%;
+}

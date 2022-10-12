@@ -1,0 +1,60 @@
+@media  screen and (max-width: 576px) {
+    .videonosotros{
+        width: 480px;
+        height: 280px;
+    }
+    .logo{
+        width: 70px ;
+        height: 70px;
+    }
+    .nombre{
+        font-size: 4em;
+    }
+    .tamañoimagen{
+        width: 100%;
+        height: 280px;
+    }
+    .grid-layout{
+        display: grid;
+        justify-content:stretch;
+        grid-template-areas:"txt1"
+                            "img1"
+                            "txt2" 
+                            "img2";
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .caja{
+        height: 750px;
+        background-color: #fffec8;
+        text-align: center;
+        line-height: 150px;
+    }
+    .c1{
+        grid-area: txt1;
+    }
+    .c2{
+        grid-area: img1;
+    }
+    .c3{
+        grid-area: txt2;
+    }
+    .c4{
+        grid-area: img2;
+    }
+    .ubicacion{
+        width: 100%;
+    }
+    .tamañoubi{
+        width: 100%;
+        height: 300px;
+    }
+    .tamañoubilarumbe{
+        width: 100%;
+        height: 300px;
+    }
+    .imgser{
+        width: 80%;
+    }
+}
