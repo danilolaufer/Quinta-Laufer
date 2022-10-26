@@ -11,14 +11,14 @@
         width: 100%;
     }
     .fondopag1{
-        background-color: #fe495f;
+        background-color: $background-title;
         width: 100%;
     }
     .fondopag2{
         background-color: #fe9d97 ;
     }
     .fondooferta{
-        background-color:#fe495f;
+        background-color:$background-title;
     }
     .ofertatexto{
         display: flex;
@@ -26,3 +26,4 @@
         justify-content: flex-start;
         font-size:xx-large
 }
+

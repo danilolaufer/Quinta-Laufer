@@ -57,6 +57,10 @@
   margin: 10px;
   padding: 40px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 #herencia {
   background-color: #bded7e;
   width: 100%; }
@@ -195,8 +199,7 @@ section img {
 .grid-layout {
   display: grid;
   justify-content: stretch;
-  grid-template-areas: "txt1 img1"
- "txt2 img2";
+  grid-template-areas: "txt1 img1" "txt2 img2";
   margin: 10px auto;
   padding: 20px;
   border: 1px solid black;
@@ -228,10 +231,7 @@ section img {
 
 .grid-contacto {
   display: grid;
-  grid-area: "header"
-  "main main main"
-  "aside aside aside"
-  "footer footer footer";
+  grid-area: "header" "main main main" "aside aside aside" "footer footer footer";
   grid-template-rows: repeat(auto-fill, 1fr); }
 
 .grid-header {
@@ -303,8 +303,22 @@ section img {
     background-color: #f8f7d3; }
 
 .t1 {
-  line-height: 100px;
+  line-height: 50px;
   font-size: 20px; }
+
+.color {
+  color: black; }
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px; }
 
 @media screen and (max-width: 576px) {
   .videonosotros {
@@ -321,10 +335,7 @@ section img {
   .grid-layout {
     display: grid;
     justify-content: stretch;
-    grid-template-areas: "txt1"
-  "img1"
-  "txt2" 
-  "img2";
+    grid-template-areas: "txt1" "img1" "txt2"  "img2";
     margin: 10px auto;
     padding: 20px;
     border: 1px solid black; }
