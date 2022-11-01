@@ -1,6 +1,6 @@
 @media  screen and (max-width: 576px) {
     .videonosotros{
-        width: 480px;
+        width: 100%;
         height: 280px;
     }
     .logo{
@@ -16,45 +16,70 @@
     }
     .grid-layout{
         display: grid;
-        justify-content:stretch;
         grid-template-areas:"txt1"
                             "img1"
                             "txt2" 
                             "img2";
-        margin: 10px auto;
-        padding: 20px;
         border: 1px solid black;
+        width: 100%;
     }
     .caja{
-        height: 750px;
+        width: 100%;
+        height: 100%;
         background-color: #fffec8;
         text-align: center;
         line-height: 150px;
     }
     .c1{
         grid-area: txt1;
+        width: 100%;
     }
     .c2{
         grid-area: img1;
+        width: 100%;
+
     }
     .c3{
         grid-area: txt2;
+        width: 100%;
     }
+
     .c4{
         grid-area: img2;
+        width: 100%;
     }
     .ubicacion{
         width: 100%;
+        height: 250px;
     }
     .tamañoubi{
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
     .tamañoubilarumbe{
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
     .imgser{
         width: 80%;
     }
+    .imagen{
+        width: 100%;
+    }
+    .textosucursal{
+        width: 100%;
+    }
+    .icon{
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        background:none;
+        border-color: black;
+        border-radius: 100%;
+        border-style:double;
+    }
+    .textonosotros{
+        font-size: 10px;
+    }
+    
 }
