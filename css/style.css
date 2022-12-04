@@ -29,7 +29,7 @@
 
 .textosucursal {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #fe9d97;
   width: 25%;
   box-shadow: 10px 10px #fe495f; }
@@ -201,7 +201,8 @@ section img {
 .grid-layout {
   display: grid;
   justify-content: stretch;
-  grid-template-areas: "txt1 img1" "txt2 img2";
+  grid-template-areas: "txt1 img1"
+ "txt2 img2";
   margin: 10px auto;
   padding: 20px;
   border: 1px solid black;
@@ -233,7 +234,10 @@ section img {
 
 .grid-contacto {
   display: grid;
-  grid-area: "header" "main main main" "aside aside aside" "footer footer footer";
+  grid-area: "header"
+ "main main main"
+ "aside aside aside"
+ "footer footer footer";
   grid-template-rows: repeat(auto-fill, 1fr); }
 
 .grid-header {
@@ -337,7 +341,10 @@ section img {
     height: 280px; }
   .grid-layout {
     display: grid;
-    grid-template-areas: "txt1" "img1" "txt2"  "img2";
+    grid-template-areas: "txt1"
+ "img1"
+ "txt2" 
+ "img2";
     border: 1px solid black;
     width: 100%; }
   .caja {
