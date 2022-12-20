@@ -1,52 +1,43 @@
-nombre=prompt("Ingrese su nombre: ");
-precios=prompt("Ingresa un producto para saber su precio (kg o unidad): ");
+//inicio nombre y lista de precios
+
+let nombre=prompt("Ingrese su nombre: ");
+let precios=prompt("Ingresa un producto para saber su precio (kg o unidad):                           escriba esc PARA OMITIR")
 
 if (nombre=="") {
     console.log("Recargue la pagina, debe poner su nombre");
 }else{
-    console.log("Hola " + nombre + " Bienvenido a Quinta Laufer, Ingresó a consultas de precio. ");
+    console.log("Hola " + nombre + " Bienvenido a Quinta Laufer, Ingresó a la lista de precios. ");
 }
-precios=prompt("Ingresa un producto para saber su precio (kg o unidad): ")
-while(precios!="ESC"){
-    switch (precios) {
-        case "tomate perita":
-            console.log();("El precio es: $ 169kg");
-            break;
-        case "tomate redondo":
-            console.log("El precio es: $ 199kg");
-            break;
-        case "naranja":
-            console.log("El precio es: $ 99kg");
-            break;
-        case "sandia":
-            console.log("El precio es: $ 130kg");
-            break;
-        case "pepino":
-            console.log("El precio es: $ 110kg");
-            break;
-        case "papa":
-            console.log("El precio es: $ 50kg");
-            break;
-        case "cebolla":
-            console.log("El precio es: $ 549kg");
-            break;
-        case "pera":
-            console.log("El precio es: $ 159kg");
-            break;
-        default:
-            console.log("Vuelva a intentarlo, el producto no se encuentra");
-            break;
-        }
-        precios=prompt("Ingresa un producto para saber su precio (kg o unidad): ");
-}
-let gasto1,gasto2,gasto3,total,descuento,pagar,desc
-gasto1=parseFloat(prompt("¿Cuanto gasto en verduras? "))
-gasto2=parseFloat(prompt("¿Cuanto gasto en carbon? "))
-gasto3=parseFloat(prompt("¿Cuanto gasto en huevos? "))
-total= gasto1+gasto2+gasto3
-console.log("Subtotal es: " + total);
+const productos = [
+    { id: 1, nombre: "toamte perita", precio: 169},
+    { id: 2, nombre: "tomate redondo", precio: 199},
+    { id: 3, nombre: "huevo", precio: 700},
+    { id: 4, nombre: "sandia", precio: 130},
+    { id: 5, nombre: "carbon", precio: 950},
+    { id: 6, nombre: "papa", precio: 50},
+    { id: 7, nombre: "cebolla", precio: 549},
+    { id: 8, nombre: "pera", precio: 159},
+    { id: 9, nombre: "naranja", precio: 139}
+] 
 
-descuento=prompt("¿Abona en efectivo?")
+productos.splice(7)
+
+console.table(productos);
+
+//Vemos cuanto gastó y si podemos, aplicar descuento (10%off)
+
+let gasto1=parseFloat(prompt("¿Cuanto gasto en verduras? "))
+let gasto2=parseFloat(prompt("¿Cuanto gasto en carbon? "))
+let gasto3=parseFloat(prompt("¿Cuanto gasto en huevos? "))
+
+function suma () {
+    total= gasto1+gasto2+gasto3;
+    console.log("Subtotal es: " + total);
+
+
+}
+suma()
+let descuento=prompt("¿Abona en efectivo?")
 if (descuento=="si") {
     desc=10*total/100
     pagar=total-desc
@@ -56,4 +47,3 @@ if (descuento=="si") {
 }
 
 console.log("Muchas Gracias! Que tenga buen dia.");
-
