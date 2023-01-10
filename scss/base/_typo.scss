@@ -34,3 +34,15 @@ a{
     text-decoration: none;
     color: $tipoa
 }
+.preguntas{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px; 
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blue($color: #09005d);
+    padding-top: 20px;
+}
